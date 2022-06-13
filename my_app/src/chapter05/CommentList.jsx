@@ -4,7 +4,9 @@ import Comment from './Comment'
 function CommentList(props) {
   return (
     <div>
-      <Comment />
+      <Comment name={ "Habok Park" } comment={ "I am getting better!!" } />
+      <Comment name={ "James Kam" } comment={ "React is fun." } />
+      
     </div>
   );
 }
