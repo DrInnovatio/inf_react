@@ -19,19 +19,12 @@ const comments = [
 function CommentList(props) {
   return (
     <div>
-<<<<<<< HEAD
       { comments.map((comment) => {
         return (
           <Comment name={comment.name} comment={comment.comment}/>
         )
       })}
-
-=======
-      <Comment name={ "Habok Park" } comment={ "I am getting better!!" } />
-      <Comment name={ "James Kam" } comment={ "React is fun." } />
-      
->>>>>>> 83596d794be23545da2a96d2ce99a7fe6695a56e
-    </div>
+    </div> 
   );
 }
 
