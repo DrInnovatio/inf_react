@@ -5,7 +5,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 //import Library from './chapter03/Library';
 //import Clock from './chapter04/Clock';
-import CommentList from './chapter05/CommentList';
+//import CommentList from './chapter05/CommentList';
+import NotificationList from './chapter_06/NotificationList';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -23,9 +24,16 @@ import CommentList from './chapter05/CommentList';
 //   );
 // }, 1000);
 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <CommentList />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
   <React.StrictMode>
-    <CommentList />
+    <NotificationList />
   </React.StrictMode>,
   document.getElementById('root')
 );
