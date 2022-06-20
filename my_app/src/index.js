@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 //import Library from './chapter03/Library';
 //import Clock from './chapter04/Clock';
 //import CommentList from './chapter05/CommentList';
-import NotificationList from './chapter_06/NotificationList';
+//import NotificationList from './chapter_06/NotificationList';
+import Accomodate from './chapter07/Accomodate';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -31,11 +32,20 @@ import NotificationList from './chapter_06/NotificationList';
 //   document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <NotificationList />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <NotificationList />
+    <Accomodate />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 reportWebVitals();
