@@ -20,11 +20,11 @@ function Accomodate(props) {
 
   return (
     <div style = {{ padding: 16 }}>
-      <p>{ `Total ${count} is in there.` }</p>
+      <h2>{ `Total ${count} is in there.` }</h2>
       <button onClick={ increaseCount } disabled={ isFull }>Enter</button>
       <button onClick={ decreaseCount }>Leaving</button>
       
-      { isFull && <p style={{ color: "red"}}>It's full.</p>}
+      { isFull && <h2 style={{ color: "red"}}>It's full.</h2>}
     </div>
   )
 }
