@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 //import Clock from './chapter04/Clock';
 //import CommentList from './chapter05/CommentList';
 //import NotificationList from './chapter_06/NotificationList';
-import Accomodate from './chapter07/Accomodate';
+//import Accomodate from './chapter07/Accomodate';
+
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
