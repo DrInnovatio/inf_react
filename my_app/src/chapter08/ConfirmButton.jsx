@@ -6,7 +6,13 @@ class ConfirmButton extends React.Component {
     this.state = {
       isConfirmed: false,
     };
-    this.handleConfirm = this.handleConfirm.bind(this);
+    //this.handleConfirm = this.handleConfirm.bind(this);
+
+    this.handleConfirm = () => {
+      this.setState((prevState) => ({
+        isConfirmed: !prevState.isConfirmed,
+      })); 
+    }
   }
 
   handleConfirm() {
