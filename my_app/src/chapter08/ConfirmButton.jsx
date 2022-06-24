@@ -1,35 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-class ConfirmButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isConfirmed: false,
-    };
-    //this.handleConfirm = this.handleConfirm.bind(this);
+function ConfirmButton(props) {
+  const [isConfirmed, setIsConfirmed] = useState(false);
 
-    this.handleConfirm = () => {
-      this.setState((prevState) => ({
-        isConfirmed: !prevState.isConfirmed,
-      })); 
-    }
-  }
+  const handleConfirm = () =>{
+    setIsConfirmed((prevIsConfirmed) => !prevIsConfirmed);
+  };
 
-  handleConfirm() {
-    this.setState((prevState) => ({
-      isConfirmed: !prevState.isConfirmed,
-    }));
-  }
-  render() {
-    return (
-      <button
-        onClick={ this.handleConfirm }
-        disabled={ this.state.isConfirmed }
-      >
-        { this.state.isConfirmed ? "Checked" : "Check" }
-      </button>
-    );
-  }
+  return (
+    <button onClick={ handleConfirm } disabled={ isConfirmed }>
+      { isConfirmed ? "checked" : "Check" }
+    </button>
+  );
 }
 
 export default ConfirmButton;
+
+// class ConfirmButton extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       isConfirmed: false,
+//     };
+//     //this.handleConfirm = this.handleConfirm.bind(this);
+
+//     // class field syntax
+//     // this.handleConfirm = () => {
+//     //   this.setState((prevState) => ({
+//     //     isConfirmed: !prevState.isConfirmed,
+//     //   }));
+//     // }
+//   }
+
+//   handleConfirm() {
+//     this.setState((prevState) => ({
+//       isConfirmed: !prevState.isConfirmed,
+//     }));
+//   }
+//   render() {
+//     return (
+//       <button
+//         onClick={ this.handleConfirm }
+//         disabled={ this.state.isConfirmed }
+//       >
+//         { this.state.isConfirmed ? "Checked" : "Check" }
+//       </button>
+//     );
+//   }
+// }
+
+
+
+
