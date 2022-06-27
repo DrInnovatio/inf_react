@@ -8,7 +8,8 @@ import reportWebVitals from './reportWebVitals';
 //import CommentList from './chapter05/CommentList';
 //import NotificationList from './chapter_06/NotificationList';
 //import Accomodate from './chapter07/Accomodate';
-import ConfirmButton from './chapter08/ConfirmButton';
+//import ConfirmButton from './chapter08/ConfirmButton';
+import LandingPage from './chapter09/LandingPage';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -47,9 +48,16 @@ import ConfirmButton from './chapter08/ConfirmButton';
 //   document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <ConfirmButton />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
   <React.StrictMode>
-    <ConfirmButton />
+    <LandingPage />
   </React.StrictMode>,
   document.getElementById('root')
 );
