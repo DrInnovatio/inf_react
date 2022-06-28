@@ -21,7 +21,7 @@ function Toolbar(props) {
         <button onClick={ onClickLogout }> Log Out </button>
       ) : (
           <button onClick={ onClickLogin }> Log In </button>
-      )};
+      )}
     </div>
   )
 }
