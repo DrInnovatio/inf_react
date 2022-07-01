@@ -10,7 +10,8 @@ import reportWebVitals from './reportWebVitals';
 //import Accomodate from './chapter07/Accomodate';
 //import ConfirmButton from './chapter08/ConfirmButton';
 //import LandingPage from './chapter09/LandingPage';
-import AttendanceBook from './chapter10/AttendanceBook';
+//import AttendanceBook from './chapter10/AttendanceBook';
+import SignUp from './chapter11/SignUp';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -58,7 +59,7 @@ import AttendanceBook from './chapter10/AttendanceBook';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AttendanceBook />
+    <SignUp />
   </React.StrictMode>,
   document.getElementById('root')
 );
