@@ -12,7 +12,8 @@ import reportWebVitals from './reportWebVitals';
 //import LandingPage from './chapter09/LandingPage';
 //import AttendanceBook from './chapter10/AttendanceBook';
 //import SignUp from './chapter11/SignUp';
-import Calculator from './chapter12/Calculator';
+//import Calculator from './chapter12/Calculator';
+import ProfileCard from './chapter13/ProfileCard';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -60,13 +61,9 @@ import Calculator from './chapter12/Calculator';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator />
+    <ProfileCard />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
-
-
 
 reportWebVitals();
