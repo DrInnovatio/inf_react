@@ -35,7 +35,7 @@ const blockItems = [
   {
     label: "3",
     padding: "2rem",
-    backgroundColor: "blue"
+    backgroundColor: "yellow"
   },
 ];
 
