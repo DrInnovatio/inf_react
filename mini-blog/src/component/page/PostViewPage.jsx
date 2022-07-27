@@ -48,4 +48,48 @@ const CommentLabel = styled.p`
   font-weight: 500;
 `;
 
+function PostViewPage(props) {
+  const navigate = useNavigate();
+  const { postId } = useParams();
 
+  const post = data.find((item) => {
+    return item.id = postId;
+  });
+
+  const [comment, setComment] = useState("");
+
+  return (
+    <Wrapper>
+      <Container>
+        <Button
+          title="backward"
+          onClick={ () => {
+            navigate("/");
+          }}
+        />
+      
+      <postContainer>
+        <TitleText>{ post.title }</TitleText>
+        <ContentText> { post.content }</ContentText>
+      </postContainer>
+
+      <CommentLabel>Reply</CommentLabel>
+      <CommentList comments={ post.comments } />
+      
+      <TextInput
+        height={ 40 }
+        value={ comment }
+        onChange={ (event) => {
+          setComment(event.target.value);
+        } }
+      />
+      <Button
+        title="Wirte Reply"
+        onClick={ () => {
+          navigate("/");
+        } }
+        />
+        </Container>
+    </Wrapper>
+  )
+}
