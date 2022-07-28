@@ -93,3 +93,5 @@ function PostViewPage(props) {
     </Wrapper>
   )
 }
+
+export default PostViewPage;
