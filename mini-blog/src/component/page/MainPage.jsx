@@ -1,9 +1,9 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import styled from 'styled-components'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 import PostList from "../list/PostList";
 import Button from "../ui/Button";
-import data from "../../data.json";
+import data from '../../data.json';
 
 const Wrapper = styled.div`
     padding: 16px;
@@ -19,35 +19,34 @@ const Container = styled.div`
     max-width: 720px;
 
     & > * {
-      :not(:last-child){
-        margin-bottom: 16px;
-      }
+        :not(:last-child) {
+            margin-bottom: 16px;
+        }
     }
 `;
 
 function MainPage(props) {
-  const { } = props;
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  return (
-    <Wrapper>
-      <Container>
-        <Button
-          title="Write"
-          onClick={ () => {
-            navigate("/post-write");
-          } }
-        />
+    return (
+        <Wrapper>
+            <Container>
+                <Button
+                    title="글 작성하기"
+                    onClick={() => {
+                        navigate("/post-write");
+                    }}
+                />
 
-        <PostList
-          posts={ data }
-          onClickItem={ (item) => {
-            navigate(`/post/${item.id}`);
-          } }
-        />
-      </Container>
-    </Wrapper>
-  );
+                <PostList
+                    posts={data}
+                    onClickItem={(item) => {
+                        navigate(`/post/${item.id}`);
+                    }}
+                />
+            </Container>
+        </Wrapper>
+    );
 }
 
 export default MainPage;
