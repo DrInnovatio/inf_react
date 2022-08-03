@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
@@ -10,9 +10,9 @@ const StyledButton = styled.button`
 `;
 
 function Button(props) {
+    const { title, onClick } = props;
 
-  const { title, onClick } = props;
-  return <StyledButton onClick={ onClick }>{ title || "button"}</StyledButton>
+    return <StyledButton onClick={onClick}>{title || "button"}</StyledButton>;
 }
 
 export default Button;
